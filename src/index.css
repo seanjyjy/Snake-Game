@@ -1,13 +1,30 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.gameDimension {
+  position: relative;
+  margin: 20px auto;
+  width: 800px;
+  height: 540px;
+  border: 1px solid #333333;
+}
+.header {
+  width: "100%";
+  height: 80px;
+  border: 1px solid #444444;
+  position: relative;
+}
+.snakePiece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffb6c1;
+  border: 1px solid white;
+}
+.food {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(135, 206, 250);
+  border: 1px solid white;
 }
