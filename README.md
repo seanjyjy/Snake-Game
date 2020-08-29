@@ -15,7 +15,8 @@ A simple snake game project without much UIUX design and functionalities incorpa
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `git clone`
+git clone the directory into your terminal!
 ### `yarn start`
 
 Runs the app in the development mode.<br />
