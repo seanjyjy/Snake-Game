@@ -1,6 +1,8 @@
 ## About
 A simple snake game project without much UIUX design and functionalities incorpated. This project is for myself to learn ReactJS as well as some CSS. Project is very new and will take some time for improvement.
 
+<p align="center"><img width="100%" src="snakeypreview.png"/></p>
+
 ## Improvements to be made
 1. UIUX design <br />
 2. Extra functionalities <br />
