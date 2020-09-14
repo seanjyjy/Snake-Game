@@ -1,0 +1,25 @@
+.playField:focus {
+  outline: none;
+}
+.playField {
+  flex-direction: row;
+  display: flex;
+}
+.leftColumn {
+  display: flex;
+  flex: 1;
+}
+.rightColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.gameDimension {
+  position: relative;
+  margin: 20px auto;
+  width: 800px;
+  height: 540px;
+  border: 1px solid #d0d0d0;
+}

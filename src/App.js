@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import Snake from "./Snake";
 import Food from "./Food";
+import Header from "./Header";
+import Button from "./Button";
+import "./App.css";
+import CurrentScore from "./CurrentScore";
+
 function App() {
   const isOnSnake = (x, y) => {
     const snakeCopy = [...snakePieces];
@@ -21,23 +26,14 @@ function App() {
     return [generateX, generateY];
   };
 
-  let [snakePieces, setSnakePieces] = useState([
-    [0, 0],
-    [10, 0],
-    [20, 0],
-    [790, 540],
-  ]);
+  let [snakePieces, setSnakePieces] = useState([[0, 0]]);
   let [foodPosition, setFoodPosition] = useState(generatePossiblePosition());
   const [userDirection, setUserDirection] = useState("RIGHT");
   const [gameState, setGameState] = useState(false);
   const [speed, setSpeed] = useState(null);
 
   const startGame = () => {
-    setSnakePieces([
-      [0, 0],
-      [10, 0],
-      [20, 0],
-    ]);
+    setSnakePieces([[0, 0]]);
     setGameState(false);
     setSpeed(80);
     setUserDirection("RIGHT");
@@ -47,7 +43,6 @@ function App() {
   const endGame = () => {
     setGameState(false);
     setSpeed(null);
-    alert(`Game over. Your score is ${snakePieces.length}`);
   };
 
   useInterval(() => updateEvent(), speed);
@@ -180,12 +175,21 @@ function App() {
 
   return (
     <>
-      <div className="header"></div>
-      <div role="button" tabIndex="0" onKeyDown={(e) => onKeyDown(e)}>
-        <button onClick={startGame}>Start Game</button>
+      <Header />
+      <div
+        role="button"
+        tabIndex="0"
+        onKeyDown={(e) => onKeyDown(e)}
+        className="playField"
+      >
+        <div className="leftColumn"></div>
         <div className="gameDimension">
-          <Snake snakePieceList={snakePieces} />
+          <Snake snakePieceList={snakePieces} direction={userDirection} />
           <Food pos={foodPosition} />
+        </div>
+        <div className="rightColumn">
+          <CurrentScore score={snakePieces.length - 1} />
+          <Button title={"Start Game"} onClick={startGame} />
         </div>
       </div>
     </>

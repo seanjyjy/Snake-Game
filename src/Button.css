@@ -1,0 +1,17 @@
+.Button {
+  height: 70px;
+  width: 180px;
+  background-color: rgb(143, 168, 252);
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+}
+.button__title {
+  color: #f0f0f0;
+  font-family: Nunito;
+  font-size: 20px;
+  display: flex;
+}

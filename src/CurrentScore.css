@@ -1,0 +1,17 @@
+.currentScore {
+  display: flex;
+  flex: 1;
+  position: relative;
+  top: 20px;
+  flex-direction: column;
+}
+.currentScore__title {
+  font-family: Nunito;
+  color: rgb(143, 168, 252);
+  align-self: center;
+}
+.currentScore__score {
+  font-family: Nunito;
+  color: rgb(143, 168, 252);
+  align-self: center;
+}

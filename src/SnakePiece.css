@@ -1,0 +1,38 @@
+.snakePiece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7487c4;
+}
+.snakePieceHeadRight {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7487c4;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.snakePieceHeadLeft {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7487c4;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.snakePieceHeadUp {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7487c4;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.snakePieceHeadDown {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7487c4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
